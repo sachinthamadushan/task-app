@@ -1,10 +1,14 @@
 import './App.css'
+import TaskFrom from './components/TaskFrom'
+import Header from './components/Header'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-3xl font-bold text-center'>Task App</h1>
+     <Header/>
+     <main></main>
+     <footer></footer>
     </>
   )
 }
