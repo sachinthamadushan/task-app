@@ -1,16 +1,15 @@
 import './App.css'
-import TaskFrom from './components/TaskFrom'
 import Header from './components/Header'
+import Main from './components/Main'
 
 function App() {
 
   return (
     <>
      <Header/>
-     <main></main>
+     <Main/>
      <footer></footer>
     </>
   )
 }
-
 export default App
