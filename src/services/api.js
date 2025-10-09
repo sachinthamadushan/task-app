@@ -1,8 +1,10 @@
-const BASE_URL='http://localhost:3000/api/v1';
+const BASE_URL=import.meta.env.VITE_API_URL?.replace(/\/$/, '') 
+||'http://localhost:3000/api/v1';
 
-const request = async (path) => {
+const request = async (path,options={}) => {
     const res = await fetch(`${BASE_URL}${path}`,{
-      headers:{'Content-Type':'application/json'}  
+      headers:{'Content-Type':'application/json', ...(options.headers || {})},
+      ...options  
     });
 
     if(!res.ok){
