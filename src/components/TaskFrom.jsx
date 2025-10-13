@@ -18,6 +18,9 @@ const TaskFrom = ({ onSubmit, onCancel, inital }) => {
       setError("Title is required");
       return;
     }
+    setTitle('');
+    setDesc('')
+    setCompleted(false);
     onSubmit({ title: title.trim(), desc, completed });
   };
 
