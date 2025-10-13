@@ -43,6 +43,16 @@ const Main = () => {
 
   const updateTask = () => {};
 
+  const deleteTask = async (task) => {
+    if(confirm(`Delete task ${task.title}`)) return;
+    setError('');
+    try {
+      
+    } catch (error) {
+      
+    }
+  }
+
   return (
     <main className="mx-auto max-w-4xl px-4 py-6 space-y-6">
       <section className="space-y-3">
